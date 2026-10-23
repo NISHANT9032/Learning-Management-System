@@ -108,11 +108,16 @@ const Home = () => {
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.3 }}
     >
-      <img
-        src={featuredCourse ? featuredCourse.thumbnail : "Loading..."}
-        alt="Course"
-        className="rounded-xl shadow-lg w-full max-h-[250px] sm:max-h-[320px] object-cover"
-      />
+      {featuredCourse?.thumbnail && (
+  <img
+    src={featuredCourse.thumbnail}
+    alt={featuredCourse.title || "Featured course"}
+    className="rounded-xl shadow-lg w-full max-h-[250px] sm:max-h-[320px] object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+)}
     </motion.div>
   </div>
 </section>
