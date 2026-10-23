@@ -3,7 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie"; // ✅ Import js-cookie
 
 // Define the base API URL
-const API_BASE_URL = "https://learning-management-system-o8nu.onrender.com/api/exams";
+const API_BASE_URL = "https://learning-management-system-ylxi.onrender.com/api/exams";
 
 // ✅ Function to check if the token is valid
 const isTokenValid = (token) => {

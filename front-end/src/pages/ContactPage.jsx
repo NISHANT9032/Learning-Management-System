@@ -30,7 +30,7 @@ const ContactPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'https://learning-management-system-o8nu.onrender.com/api/contact',
+        'https://learning-management-system-ylxi.onrender.com/api/contact',
         formData
       );
       console.log(response.data);
