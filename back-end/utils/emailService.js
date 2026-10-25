@@ -7,7 +7,7 @@ require("dotenv").config();
 //   EMAIL_FROM=an email address verified as a sender in Brevo (Senders, Domains & Dedicated IPs)
 const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
-    port: 587,
+    port: 2525,
     secure: false, // Brevo uses STARTTLS on 587, not implicit TLS
     auth: {
         user: process.env.BREVO_SMTP_USER,
